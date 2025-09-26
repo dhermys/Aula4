@@ -11,20 +11,19 @@
     <div class="container">
         <h1>PORCENTAGEM DE VALOR (X% DE Y)</h1>
 
-        <!-- Campo para a porcentagem (X%) -->
         <input type="number" id="valor1" placeholder="Digite a porcentagem (%)">
 
-        <!-- Campo para o valor base (Y) -->
         <input type="number" id="valor2" placeholder="Digite o valor base">
 
-        <!-- Botão que chama a função de porcentagem -->
-        <button onclick="calcularPorcentagem()">Calcular</button>
+        <div class="botoes-grupo">
+            <button class="btn-secundario" onclick="limparCampos()">Limpar</button>
+            
+            <button class="btn-primario" onclick="calcularPorcentagem()">Calcular</button>
+        </div>
 
-        <!-- Área onde o resultado será exibido -->
         <h2 id="resultado">O resultado aparecerá aqui</h2>
     </div>
 
-    <!-- Script JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
