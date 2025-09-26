@@ -48,10 +48,51 @@ button {
 button:hover {
     background-color: #0056b3;      /* Escurece a cor de fundo para dar feedback visual. */
 }
+/* O seletor 'button' estiliza o botão. */
+/* O seletor 'button' original foi removido. */
+
+/* NOVO: Estilo para agrupar os botões */
+.botoes-grupo {
+    display: flex; /* Permite que os botões fiquem lado a lado */
+    justify-content: space-between; /* Distribui o espaço entre eles */
+    width: 95%; /* Mantém a largura que era aplicada antes */
+    margin: 0 auto 10px auto; /* Centraliza e adiciona margem na parte inferior */
+}
+
+/* NOVO: Estilo base para todos os botões no grupo */
+.botoes-grupo button {
+    width: 48%; /* Dá 48% para cada botão (deixando 4% para a margem e espaçamento) */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Adiciona uma transição suave para o hover */
+}
+
+/* NOVO: Estilo para o botão principal (Calcular) */
+.btn-primario {
+    background-color: #007bff; /* Azul */
+    color: white;
+}
+
+.btn-primario:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* NOVO: Estilo para o botão secundário (Limpar) */
+.btn-secundario {
+    background-color: #6c757d; /* Cinza */
+    color: white;
+}
+
+.btn-secundario:hover {
+    background-color: #5a6268; /* Cinza mais escuro no hover */
+}
 
 /* O seletor '#resultado' estiliza o elemento com o id 'resultado'. */
 #resultado {
-    margin-top: 20px;               /* Adiciona uma margem no topo para separar do botão. */
-    font-size: 1.2em;               /* Tamanho da fonte um pouco maior. */
-    color: #555;                    /* Cor do texto cinza. */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
 }
